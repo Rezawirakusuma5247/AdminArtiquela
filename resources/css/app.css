@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .dark .bg-white {
+        background-color: #1f2937 !important; /* bg-gray-800 */
+        color: #f3f4f6 !important;
+    }
+
+    .dark .shadow-md,
+    .dark .shadow-sm,
+    .dark .shadow {
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -2px rgba(0, 0, 0, 0.5) !important;
+    }
+
+    .dark .shadow-blue-500\/20 {
+        box-shadow: 0 4px 14px 0 rgba(9, 141, 236, 0.25) !important;
+    }
+
+    @layer utilities {
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
+    .dark .text-gray-800,
+    .dark .text-gray-900,
+    .dark .text-gray-700 {
+        color: #f3f4f6 !important;
+    }
+
+    .dark .text-gray-600,
+    .dark .text-gray-500 {
+        color: #9ca3af !important;
+    }
+
+    .dark .border-gray-100,
+    .dark .border-gray-200 {
+        border-color: #374151 !important;
+    }
+
+    .dark table thead {
+        background-color: #374151 !important;
+    }
+
+    .dark table thead th {
+        color: #e5e7eb !important;
+    }
+
+    .dark table tbody tr {
+        background-color: #1f2937 !important;
+        color: #d1d5db !important;
+    }
+
+    .dark table tbody tr:hover,
+    .dark table tbody tr:hover td {
+        background-color: #374151 !important;
+        color: #ffffff !important;
+    }
+
+    .dark .bg-amber-50,
+    .dark .bg-yellow-50,
+    .dark .bg-amber-100 {
+        background-color: rgba(217, 119, 6, 0.2) !important;
+        color: #fcd34d !important;
+    }
+
+    .dark .bg-red-50,
+    .dark .bg-red-100 {
+        background-color: rgba(220, 38, 38, 0.2) !important;
+        color: #fca5a5 !important;
+    }
+
+    .dark .bg-emerald-50,
+    .dark .bg-green-50 {
+        background-color: rgba(5, 150, 105, 0.2) !important;
+        color: #6ee7b7 !important;
+    }
+
+    .dark input,
+    .dark select,
+    .dark textarea,
+    .dark .bg-gray-50 {
+        background-color: #374151 !important; 
+        color: #ffffff !important;
+        border-color: #4b5563 !important;
+    }
+
+    .dark input::placeholder {
+        color: #9ca3af !important;
+    }
+}
